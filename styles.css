@@ -40,3 +40,19 @@
     /* kort voor top 20px, bottom 20px, left en right 0px */
 }
 
+#container:hover #menu {
+    background-color: transparent;
+}
+
+#container:hover #menu::before {
+    transform: rotate(45deg);
+    /*Het is belangrijk om hier dezelfde property te bewerken als op #menu::before (dus allebei top, of allebei bottom) anders draait het kruisje niet goed vanuit het midden! */
+    top: 0;
+}
+
+#container:hover #menu::after {
+    transform: rotate(-45deg);
+    /*Het is belangrijk om hier dezelfde property te bewerken als op #menu::before (dus allebei top, of allebei bottom) anders draait het kruisje niet goed vanuit het midden! */
+    top: 0;
+}
+
