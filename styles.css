@@ -8,7 +8,6 @@
     position: relative;
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
-    margin: 100px;
 }
 
 #menu::before,
@@ -30,3 +29,14 @@
     left: 0;
     top: 20px;
 }
+
+#container {
+    border: 2px dotted greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    padding: 20px 0;
+    /* kort voor top 20px, bottom 20px, left en right 0px */
+}
+
